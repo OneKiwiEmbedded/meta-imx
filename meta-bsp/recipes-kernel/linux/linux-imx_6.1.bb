@@ -18,11 +18,12 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 DEPENDS += "lzop-native bc-native"
 
 SRC_URI = "${KERNEL_SRC}"
-KERNEL_SRC ?= "git://github.com/nxp-imx/linux-imx.git;protocol=https;branch=${SRCBRANCH}"
+KERNEL_SRC ?= "git://github.com/OneKiwiEmbedded/linux-imx.git;protocol=https;branch=${SRCBRANCH}"
 KBRANCH = "${SRCBRANCH}"
-SRCBRANCH = "lf-6.1.y"
+SRCBRANCH = "onekiwi-lf-6.1.y"
 LOCALVERSION = "-lts-next"
-SRCREV = "770c5fe2c1d1529fae21b7043911cd50c6cf087e"
+#SRCREV = "770c5fe2c1d1529fae21b7043911cd50c6cf087e"
+SRCREV = "02ab25d1d9ed5ae44ae447789dfb6eea08b8837a"
 
 # PV is defined in the base in linux-imx.inc file and uses the LINUX_VERSION definition
 # required by kernel-yocto.bbclass.
