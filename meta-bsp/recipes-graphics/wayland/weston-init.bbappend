@@ -1,5 +1,10 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
+SRC_URI += " \
+            file://weston.ini \
+            file:///onekiwi.png \
+           "
+
 PACKAGECONFIG_GBM_FORMAT:mx93-nxp-bsp ?= "gbm-format"
 
 GBM_FORMAT_VALUE = "argb8888"
@@ -28,4 +33,7 @@ do_install:append() {
     if ! [ "${@bb.utils.contains('PACKAGECONFIG', 'gbm-format', 'yes', 'no', d)}" = "yes" ]; then
         sed -i -e "/^\[core\]/a #gbm-format=${GBM_FORMAT_VALUE}" ${D}${sysconfdir}/xdg/weston/weston.ini
     fi
+
+    install -m 0644 ${WORKDIR}/onekiwi.png ${D}${datadir}/weston/onekiwi.png
+    install -m 0644 ${WORKDIR}/weston.ini ${D}${sysconfdir}/xdg/weston
 }
