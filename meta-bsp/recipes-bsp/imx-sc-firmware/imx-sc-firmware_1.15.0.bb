@@ -11,6 +11,7 @@ inherit fsl-eula2-unpack2 pkgconfig deploy
 SRC_URI = " \
      ${FSL_MIRROR}/${PN}-${PV}.bin;fsl-eula=true \
      file://mx8qx-variscite-scfw-tcm.bin \
+     file://mx8qx-onekiwi-scfw-tcm.bin \
 "
 
 SRC_URI[md5sum] = "d608eb2b3d312da1dbde55b8514c1e0f"
