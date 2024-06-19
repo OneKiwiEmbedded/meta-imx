@@ -23,6 +23,7 @@ SC_FIRMWARE_NAME:mx8qxp-generic-bsp = "mx8qx-${BOARD_TYPE}-scfw-tcm.bin"
 SC_FIRMWARE_NAME:mx8dxl-generic-bsp = "mx8dxl-${BOARD_TYPE}-scfw-tcm.bin"
 SC_FIRMWARE_NAME:mx8dx-generic-bsp = "mx8dx-${BOARD_TYPE}-scfw-tcm.bin"
 SC_FIRMWARE_NAME:imx8qxp-var-som = "mx8qx-variscite-scfw-tcm.bin"
+SC_FIRMWARE_NAME:imx8qxp-onekiwi = "mx8qx-onekiwi-scfw-tcm.bin"
 
 symlink_name = "scfw_tcm.bin"
 
