@@ -23,7 +23,7 @@ KBRANCH = "${SRCBRANCH}"
 SRCBRANCH = "onekiwi-lf-6.1.y"
 LOCALVERSION = "-lts-next"
 #SRCREV = "770c5fe2c1d1529fae21b7043911cd50c6cf087e"
-SRCREV = "c864e74a2857d75f232cc688c86ac1ff2ac1e897"
+SRCREV = "b063a2e84b22ef689eb969d41237bb33395efe9d"
 
 # PV is defined in the base in linux-imx.inc file and uses the LINUX_VERSION definition
 # required by kernel-yocto.bbclass.
