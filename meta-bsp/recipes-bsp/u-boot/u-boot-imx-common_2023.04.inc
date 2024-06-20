@@ -8,7 +8,7 @@ SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
 SRCBRANCH = "onekiwi-lf_v2023.04"
 LOCALVERSION ?= "-${SRCBRANCH}"
 #SRCREV = "49b102d98881fc28af6e0a8af5ea2186c1d90a5f"
-SRCREV = "e0da0612996ce0996da6eaedc899b6d8474b75d5"
+SRCREV = "d8c2d8b94720bc4d55f2f03975cfea8496547ebe"
 
 DEPENDS += " \
     bc-native \
